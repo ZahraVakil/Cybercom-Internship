@@ -1,0 +1,16 @@
+.custom_img{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+  justify-content: center;
+}
+
+.custom_img  img.img-thumbnail{
+    width: 215px;
+    height: 315px;
+    margin-right: 20px;
+}
+
+p{
+    color: gray;
+}
