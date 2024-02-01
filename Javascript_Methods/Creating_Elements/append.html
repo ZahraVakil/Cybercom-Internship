@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Hello</h1>
+    </div>
+
+    <script>
+        var element = document.createElement('p');
+        element.innerHTML = 'Element Created';
+
+        //Append to already existing div or any other element
+        var container = document.getElementById('container');
+
+        container.appendChild(element);
+    </script>
+</body>
+</html>

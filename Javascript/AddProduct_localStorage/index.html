@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Add Product Form</h2>
+
+            <form id="addProductForm">
+                <div class="input">
+                <label for="productName">Product Title:</label>
+                <label for="productPrice"  id="labelPrice">Product Price:</label>
+                <br>
+                <input type="text" id="productName" required> 
+    
+                
+                <input type="number" id="productPrice" required>
+        
+                </div>
+                <label for="description">Description:</label> <br>
+                <textarea name="" id="description" cols="30" rows="7" placeholder="Type here"></textarea> <br>
+
+                <label for="category">Category:</label> <br>
+                <select name="category" required id="productCategory">
+                    <option value="" disabled selected hidden>Choose</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Women's Clothing">Women's Clothing</option>
+                    <option value="Men's Clothing">Men's Clothing</option>
+                  </select>
+                  <br>
+                <button class="button" onclick="addProduct()">Save</button>
+            </form>
+        
+            <script src="main.js"></script>
+         
+        </div>
+    </div>
+</body>
+</html>

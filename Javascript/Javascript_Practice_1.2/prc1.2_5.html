@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prc1.2_5</title>
+</head>
+<body>
+    <script>
+
+let person1 = {
+    name: "Narjis",
+    age: 20
+};
+
+let person2 = {
+    address: "Bhavnagar"
+};
+
+console.log(person1);
+
+function combinedObjects(obj1, obj2){
+    let combinedObject = {
+        name: obj1.name,
+        age: obj1.age,
+        address: obj2.address,
+    };
+
+    return combinedObject;
+}
+
+let combinedobj = combinedObjects(person1, person2);
+
+console.log(combinedobj);
+
+    </script>
+</body>
+</html>

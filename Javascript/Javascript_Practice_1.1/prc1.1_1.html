@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text</title>
+</head>
+<body>
+    <p id="text">Hello, Change my text my clicking on button!</p>
+    <button id="click">Click me!</button>
+
+    <script>
+        let text = document.getElementById("text");
+        let button = document.getElementById("click");
+
+        addEventListener("click", function(){
+            text.innerHTML = "I'm the new text!";
+        })
+    </script>
+</body>
+</html>

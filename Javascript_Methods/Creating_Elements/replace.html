@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Element</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="oldChild">Old Content</p>
+    </div>
+
+    <script>
+        var element = document.createElement('p')
+        element.innerHTML = "New Child";
+
+        var parent = document.getElementById('parent');
+        var oldChild = document.getElementById('oldChild');
+        parent.replaceChild(element, oldChild);
+    </script>
+</body>
+</html>

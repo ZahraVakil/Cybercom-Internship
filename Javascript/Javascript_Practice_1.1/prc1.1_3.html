@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change paragraphs</title>
+</head>
+<body>
+    <button onclick="changeText('paragraph1')">Change Text 1</button>
+    <button onclick="changeText('paragraph2')">Change Text 2</button>
+    <button onclick="changeText('paragraph3')">Change Text 3</button>
+
+    <p id="paragraph1">This is paragraph 1.</p>
+    <p id="paragraph2">This is paragraph 2.</p>
+    <p id="paragraph3">This is paragraph 3.</p>
+
+    <script>
+        function changeText(paragraphId) {
+            var paragraph = document.getElementById(paragraphId);
+
+            if (paragraphId === 'paragraph1') {
+                paragraph.innerText = 'Text changed for paragraph 1.';
+            } else if (paragraphId === 'paragraph2') {
+                paragraph.innerText = 'Text changed for paragraph 2.';
+            } else if (paragraphId === 'paragraph3') {
+                paragraph.innerText = 'Text changed for paragraph 3.';
+            }
+        }
+    </script>
+</body>
+</html>
