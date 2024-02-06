@@ -1,0 +1,85 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 20px 0px 20px 0px;   
+  }
+  
+  h1{
+    font-size:1.5em;
+    color: black;
+  }
+  .box{
+    background: #f8e8a9;
+    width:300px;
+    height: auto;
+    border: black 1px solid;
+     margin: 0 auto 0 auto;
+    padding:0px 0px 70px 0px;
+ 
+  }
+  .error-message {
+    color: red;
+    margin-top: 5px;
+}
+  .text{
+    background: white;
+    border: black 1px solid;
+    padding: 8px;
+    width:250px;
+    color: black;
+    margin-top:25px;
+    font-size:1em;
+  }
+  
+  .button{
+    background-color:  orange;
+    width:200px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border: black 1px solid;
+    margin-top:20px;
+    margin-bottom:20px;
+    float:left;
+    margin-left:50px;
+    font-weight:500;
+    font-size:0.8em;
+  }
+  .buttonRegister{
+    background-color:  orange;
+    width:200px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border: black 1px solid;
+    margin-top:2px;
+    float:left;
+    margin-left:50px;
+    font-weight:500;
+    font-size:0.8em;
+  }
+
+  .or{
+    margin-top: 50px;
+    margin-right: 35px;
+    margin-left: 10px;
+  }
+
+ .button button{
+    background-color: orange;
+    border: none;
+ }
+  
+ #Div{
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width:400px;
+      height: 300px;
+      text-align: center;
+ }

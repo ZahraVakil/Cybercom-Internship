@@ -1,0 +1,53 @@
+body{
+    font-family: "Open Sans", arial;
+    /* background: orange;
+    background: white;   
+    color:#fff; */
+    font-weight:300;
+  }
+
+  nav{
+    background: orange;
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
+    width:200px;
+  }
+  a {
+    position:relative;
+    text-decoration:none;
+    color:white;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  a{
+    display:table;
+  }
+  nav .nav-text  {
+    position:relative;
+    top:12px;
+  }
+  .main{
+    margin-left: 200px;
+    display: flex;
+  }
+
+  .data{
+    display: flex;
+    justify-content: center;
+ 
+  }
+  .data1{
+    border: black 1px solid;
+    margin-left: 20px;
+  }
+
+  .data2{
+    border: black 1px solid;
+  }
+  .data3{
+    border: black 1px solid;
+  }

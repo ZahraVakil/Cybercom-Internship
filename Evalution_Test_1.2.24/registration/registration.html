@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Registration</h2>
+        <form action="" id="formRegister">
+        <input class="text" id="name" type="text" placeholder="Name">
+        <div id="nameError" class="error-message"></div>
+        <input class="text" id="email" type="email" placeholder="Email">
+        <div id="emailError" class="error-message"></div>
+
+        <input class="text" id="password" type="password" placeholder="Password">
+        <div id="passwordError" class="error-message"></div>
+
+        <input class="text" id="confirmPassword" type="password" placeholder="Confirm Password">
+        <div id="confirmPasswordError" class="error-message"></div>
+
+        <select name="city" id="city" required class="dropdown">
+            <option value="" disabled selected hidden>Select City</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Surat">Surat</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Bhavnagar">Bhavnagar</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+
+          </select>
+          <div id="cityError" class="error-message"></div>
+
+          <select name="state" id="state" required class="dropdown">
+            <option value="" disabled selected hidden>Select State</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+        </select>
+        <div id="stateError" class="error-message"></div>
+
+        <br>
+        <div class="checkbox">
+        <input type="checkbox" id="terms">
+        <label for="terms" id="T&C"> Terms & Conditions</label><br>
+        <div id="termsError" class="error-message"></div>
+
+    </div>
+        <button class="buttonRegister" onclick="validateForm()">Register</button>
+        
+
+    </form>
+
+    </div>
+    <script src="registration.js"></script>
+
+</body>
+</html>
