@@ -69,14 +69,45 @@ hr{
 }
 
 .btnchk{
-    background-color: white;
-    border: 3px solid palevioletred;
-    border-color: palevioletred;
-    color: black;
+    background-color: palevioletred;
+    border: 10px solid palevioletred;
+    color: white;
     width: 25%;
-    font-size: 1rem;
+    font-size: 20px;
     margin-top: 4vh;
-    padding: 1vh;
-    border-radius: 4px;
+    padding: 1px;
+    border-radius: 10px;
     margin-left: 100%;
+}
+
+#grandTotal{
+    font-size: 18px;
+    margin-top: 6vh;
+    margin-left: 100%;
+    width: 25%;
+}
+
+.cardHistory{
+    margin: auto;
+    margin-top: 50px;
+    max-width: auto;
+    width: 30%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
 }
