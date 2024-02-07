@@ -1,4 +1,3 @@
- // Check if items are already in local storage, if not, add some sample data
  function bakeryProducts(){
     const sampleProduct = [
         { id: 1, name: 'Cake', price: 600, quantity: 0, image: '../assests/images/cake.jpg' },
@@ -20,10 +19,8 @@ function renderList() {
     const cartContainer = document.getElementById('cartContainer');
     cartContainer.innerHTML = ''; 
 
-    // Retrieve products from local storage
     const products = getItems();
 
-    // Loop through products and create list elements
     products.forEach(product => {
         const row = document.createElement('div');
         row.className = 'row border-top border-bottom main align-items-center';
@@ -88,7 +85,6 @@ function renderGrandTotal() {
 
     grandTotalElement.textContent = `Grand Total: ₹${total}`;
 }
-// Initial rendering of the list
 renderList();
 
 
@@ -97,25 +93,4 @@ function displayOrderHistory(){
     const orderHistoryUrl = './cartHistory.html'; 
     window.location.href = orderHistoryUrl;
         
-    const totalProducts= document.getElementById('totalProducts');
-    totalProducts.innerHTML = ''; 
-    console.log("hello");
-    const orderProducts = getItems();
-    console.log(orderProducts);
-
-    orderProducts.forEach(order => {
-        const row = document.createElement('div');
-        row.className = 'row border-top border-bottom main align-items-center';
-
-        row.innerHTML = `
-            <div class="col">
-                <div class="row">${order.name}</div>
-                <div class="row">Qty: ${order.quantity}</div>
-                <div class="row text-muted">Price: ${order.price * order.quantity}</div>
-            </div>
-            
-        `;
-
-        totalProducts.appendChild(row);
-    })
 }

@@ -1,5 +1,5 @@
 body{
-    background: grey;
+    background-color: grey;
     min-height: 100vh;
     vertical-align: middle;
     display: flex;
@@ -91,23 +91,9 @@ hr{
     margin: auto;
     margin-top: 50px;
     max-width: auto;
-    width: 30%;
+    width: 20%;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 1rem;
     border: transparent;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #f2f2f2;
-}
