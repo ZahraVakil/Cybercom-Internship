@@ -84,22 +84,22 @@ let categories = [
       title: "Coding",
       img: "coding.png",
     },
-    {
-      title: "Health",
-      img: "health.png",
-    },
-    {
-      title: "Fitness",
-      img: "fitness.png",
-    },
-    {
-      title: "Education",
-      img: "education.png",
-    },
-    {
-      title: "Finance",
-      img: "finance.png",
-    },
+    // {
+    //   title: "Health",
+    //   img: "health.png",
+    // },
+    // {
+    //   title: "Fitness",
+    //   img: "fitness.png",
+    // },
+    // {
+    //   title: "Education",
+    //   img: "education.png",
+    // },
+    // {
+    //   title: "Finance",
+    //   img: "finance.png",
+    // },
   ];
 
 const CATEGORIES_CONTAINER = document.querySelector(".categories");
@@ -121,7 +121,6 @@ const renderCategories = () =>{
         <img src="./assets/images/${category.img}" alt="${category.title}">
         <div class="content">
         <h1>${category.title}</h1>
-        <p id="pending-tasks"> You have <span class="count-value">0</span> Task(s) to complete</p>
         </div>
     </div>` ;
 

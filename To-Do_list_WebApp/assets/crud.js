@@ -7,9 +7,10 @@ const error = document.getElementById('error');
 const countValue = document.querySelector('.count-value');
 const addBtn = document.getElementById('add-btn');
 const editBtn = document.getElementById('edit-btn');
+const clearall = document.getElementById('clear-all');
 var todoListArray = [];
 
-// console.log(categoryTitle);
+console.log(categoryTitle);
 
 // const taskCount = 0;
 
@@ -17,6 +18,17 @@ var todoListArray = [];
     
 // }
 
+function sortTaskList(){
+    todoListArray.sort((b, a)=>{
+      return console.log(a.prioritySelect - b.prioritySelect)  ;
+    })
+}
+
+const filterSelect = document.getElementById("filterSelect");
+
+filterSelect.addEventListener("change", () => {
+  rendertaskList();
+});
 
 function addTask(){
     const TaskName = todoTask.value.trim();
@@ -50,25 +62,40 @@ function addTask(){
 function rendertaskList(){
     taskContainer.innerHTML = "";
 
+    let currentFilter = filterSelect.value;
+
+    console.log(currentFilter);
+
     todoListArray.forEach(task =>{
+
+        if (task.category === categoryTitle) {
+
+        if (currentFilter !== "-1" && currentFilter !== task.prioritySelect) {
+                return;
+            }
+        
         const tasks = document.createElement("div");
         tasks.classList.add("task-list");
 
+        let dueDate = task.dueDate || "No due date";
+        
+ 
         tasks.innerHTML=`
         <div class="task">
-                <input type="checkbox" class="task-check">
-                <span class="taskName">${task.taskName} <h6 class="due-date">Due Date- ${task.dueDate}</h6></span>
+                <span class="taskName">${task.taskName} <h6 class="due-date">Due Date: ${dueDate}</h6></span>
                 <button class="edit" onclick= "editTask(${task.taskId})"> <i class="fa-regular fa-pen-to-square" ></i></button>
                 <button class="delete" onclick= "deleteTask(${task.taskId})" ><i class="fa-solid fa-trash"></i></button>
                 </div>`
 
 
         taskContainer.appendChild(tasks);
+    }
     })
+
 
 }
 
-const taskCheck = document.querySelector(".task-check");
+const taskCheck = document.querySelectorAll(".task-check");
 taskCheck.forEach((checkBox) =>{
     checkBox.onchange = () =>{
         checkBox.nextElementSibling.classList.toggle("completed");
@@ -98,7 +125,7 @@ function deleteTask(taskId){
  }
 
 
-    function editTask(taskId) {
+function editTask(taskId) {
         const taskIndex = todoListArray.findIndex(task => task.taskId == taskId);
         const task = todoListArray[taskIndex];
         todoTask.value = task.taskName;
@@ -114,7 +141,7 @@ function deleteTask(taskId){
         addBtn.style.display = 'none';
     }
 
-    function updateTask(taskIndex) {
+function updateTask(taskIndex) {
         if (todoTask.value.trim() === '') {
             setTimeout(() =>{
                 error.style.display = "block";
@@ -134,11 +161,21 @@ function deleteTask(taskId){
         addBtn.style.display = 'inline-block';
         storeTasks();
     }
-    
+
+function clearAll() {
+        const confirmClear = confirm("Are you sure you want to clear all tasks in this category?");
+        if (confirmClear) {
+            todoListArray = todoListArray.filter(task => task.category !== categoryTitle);
+            storeTasks();
+            rendertaskList();
+        }
+    }
     
  
 
 function storeTasks() {
+    sortTaskList();
+
     localStorage.setItem('tasks', JSON.stringify(todoListArray));
 }
 
@@ -147,6 +184,7 @@ function displayData() {
     if (storedTasks) {
         todoListArray = JSON.parse(storedTasks);
         rendertaskList();
+    
     }
 }
 

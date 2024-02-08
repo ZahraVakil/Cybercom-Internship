@@ -163,6 +163,13 @@
     border-radius: 0.8rem;
     border: 3px solid #5a95ff;
 }
+
+#filterSelect{
+    border-radius: 0.8rem;
+    border: 3px solid #5a95ff;
+    margin-top: -10px;
+ 
+}
 #error{
     text-align: center;
     background-color: #ffff;
@@ -245,7 +252,7 @@
 .task{
     margin-top: 1em;
     display: grid;
-    grid-template-columns: 1fr 8fr 2fr 2fr ;
+    grid-template-columns: 8fr 2fr 2fr ;
     padding: 5px ;
     gap: 1em;
     border-radius: 0.5em;
