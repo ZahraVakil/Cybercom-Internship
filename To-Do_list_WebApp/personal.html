@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Tasks</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="main">
+    <div class="app">
+        <div class="categories-wrapper">
+            <div class="categories">
+                <div class="category">
+                    <div class="left">
+                        <img src="./assets/images/personal.png" alt="">
+                        <div class="content">
+                        <h1 id="catergoryTitle">Personal</h1>
+                        <p id="pending-tasks"> You have <span class="count-value">0</span> Task(s) to complete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+     <div class="personal">
+        
+        <div id="wrapper">
+            
+            <input type="text"  id="input" placeholder="Add a Task">
+
+            <select name="Priority" id="priority" required class="dropdown">
+                <option value="" disabled selected hidden>Select Priority</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Important">Important</option>
+                <option value="Not Important">Not Important</option>
+              </select>
+            <div class="due">
+              <label for="dueDate">Select Due Date:</label>
+              <input type="date" id="schedule" name="date">
+            </div>
+            <button id="add-btn" onclick="addTask()">Add Task</button>
+            <button class="edit-btn" id="edit-btn" onclick="updateTask()" style="display: none;">Update Task</button>
+
+         </div> 
+         
+         <div class="controls">
+            <div class="filters">
+                <span class="active" id="All">
+                    All
+                </span>
+                <span class="Urgent">
+                    Urgent
+                </span>
+                <span class="important">Important</span>
+                <span class="not-important">Not Important</span>
+                <span class="completedSection">Completed</span>
+
+                <button class="clearAll">Clear All</button>
+
+            </div>
+
+            
+        </div>
+        <div id="taskContainer">
+
+        </div>
+        
+        </div>
+        <p id="error">Input cannot be empty!</p>
+
+    </div>
+           </div>
+        </div>
+
+        <script src="./assets/crud.js"></script>
+</body>
+</html>
