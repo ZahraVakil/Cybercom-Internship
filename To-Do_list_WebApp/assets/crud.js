@@ -19,9 +19,9 @@ console.log(categoryTitle);
 // }
 
 function sortTaskList(){
-    todoListArray.sort((b, a)=>{
-      return console.log(a.prioritySelect - b.prioritySelect)  ;
-    })
+    todoListArray.sort((task1, task2) => {
+        return task1.prioritySelect - task2.prioritySelect;
+    });
 }
 
 const filterSelect = document.getElementById("filterSelect");
@@ -66,16 +66,22 @@ function getPriorityColor(priority) {
             return 'red';
         case '2':
             return 'orange';
+        case '3':
+            return 'black';
+        default:
+            return 'black';
     }
 }
 
 
 function rendertaskList(){
+    sortTaskList();
+    
     taskContainer.innerHTML = "";
 
     let currentFilter = filterSelect.value;
 
-    console.log(currentFilter);
+    // console.log(currentFilter);
 
     todoListArray.forEach(task =>{
 
@@ -92,20 +98,17 @@ function rendertaskList(){
         
         let dueDate = task.dueDate || "No due date";
         
+        const taskColor = getPriorityColor(task.prioritySelect); 
  
         tasks.innerHTML=`
         <div class="task">
-                <span class="taskName">${task.taskName} <h6 class="due-date">Due Date: ${dueDate}</h6></span>
+                <span class="taskName" style="color: ${taskColor};">${task.taskName} <h6 class="due-date">Due Date: ${dueDate}</h6></span>
                 <button class="edit" onclick= "editTask(${task.taskId})"> <i class="fa-regular fa-pen-to-square" ></i></button>
                 <button class="delete" onclick= "deleteTask(${task.taskId})" ><i class="fa-solid fa-trash"></i></button>
                 </div>`
 
-                const taskStyle = document.querySelectorAll(".taskName");
-                taskStyle.style.color = getPriorityColor(task.prioritySelect);
-
+              
         taskContainer.appendChild(tasks);
-
-        
     }
     })
 
