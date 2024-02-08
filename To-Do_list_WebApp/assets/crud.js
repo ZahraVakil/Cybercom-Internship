@@ -58,6 +58,17 @@ function addTask(){
     prioritySelect.value="";
     storeTasks();
 }
+function getPriorityColor(priority) {
+    switch (priority) {
+        case '-1':
+            return 'black';
+        case '1':
+            return 'red';
+        case '2':
+            return 'orange';
+    }
+}
+
 
 function rendertaskList(){
     taskContainer.innerHTML = "";
@@ -74,9 +85,11 @@ function rendertaskList(){
                 return;
             }
         
+            
         const tasks = document.createElement("div");
         tasks.classList.add("task-list");
 
+        
         let dueDate = task.dueDate || "No due date";
         
  
@@ -87,28 +100,17 @@ function rendertaskList(){
                 <button class="delete" onclick= "deleteTask(${task.taskId})" ><i class="fa-solid fa-trash"></i></button>
                 </div>`
 
+                const taskStyle = document.querySelectorAll(".taskName");
+                taskStyle.style.color = getPriorityColor(task.prioritySelect);
 
         taskContainer.appendChild(tasks);
+
+        
     }
     })
 
 
 }
-
-const taskCheck = document.querySelectorAll(".task-check");
-taskCheck.forEach((checkBox) =>{
-    checkBox.onchange = () =>{
-        checkBox.nextElementSibling.classList.toggle("completed");
-
-        if(checkBox.checked){
-            taskCount -=1;
-        }
-        else{
-            taskCount +=1;
-        }
-        displayCount(taskCount);
-    }
-})
 
 
 function deleteTask(taskId){
@@ -175,7 +177,6 @@ function clearAll() {
 
 function storeTasks() {
     sortTaskList();
-
     localStorage.setItem('tasks', JSON.stringify(todoListArray));
 }
 
