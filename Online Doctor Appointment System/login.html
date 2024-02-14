@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="main">    
+        <div class="container" >
+        <div class="toDo">
+            <h2>Online Doctor Appointment <img src="./assets/images/doctor.png" alt="icon"></h2>
+        </div>
+
+        <div class="card">
+       
+          
+            <div class="box">
+                <h1>Login</h1>
+                <form action="" id="formLogin">
+                <input id="user" class="text" name="user"  placeholder="Username">
+                <br>
+                <div id="userError" class="error-message"></div>
+                <input id="password" class="text" name="password" type="password" placeholder="Password">
+                <div id="passwordError" class="error-message"></div>
+                    <button class="button" onclick="validateForm()">LOG IN</button>
+            
+                    <h5 class="or">Not a User yet??</h5>
+                    <br>
+                    <button class="buttonRegister" onclick="location.href='./registration.html'">REGISTER NOW</button>
+                </form>
+            </div>
+            
+        <script src="./assets/js/login.js"></script>
+   
+   
+</body>
+</html>

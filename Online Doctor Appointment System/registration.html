@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="main">    
+        <div class="container" >
+        <div class="toDo">
+            <h2>Online Doctor Appointment <img src="./assets/images/doctor.png" alt="icon"></h2>
+        </div>
+
+        <div class="card">
+       
+          
+            <div class="box">
+                <h1>Registration</h1>
+                <form action="" id="formRegister">
+                <input id="FullName" class="text" name="user"  placeholder="Full Name">
+                <br>
+                <div id="FullnameError" class="error-message"></div>
+
+                <input id="UserName" class="text" name="user"  placeholder="Username">
+                <br>
+                <div id="nameError" class="error-message"></div>
+
+                <input id="password" class="text" name="password" type="password" placeholder="Password">
+                <div id="passwordError" class="error-message"></div>
+
+                
+                <input class="text" id="confirmPassword" type="password" placeholder="Confirm Password">
+                <div id="confirmPasswordError" class="error-message"></div>
+        
+                <select name="users" id="option" required class="dropdown">
+                    <option value="" disabled selected hidden>Select user</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Patient">Patient</option>
+                  </select>
+                  <div id="optionError" class="error-message"></div>
+        
+                  <button class="Register" onclick="validateForm()">Register</button>
+                </form>
+            </div>
+            
+        <script src="./assets/js/registration.js"></script>
+        <script src="login.html"></script>
+   
+   
+</body>
+</html>

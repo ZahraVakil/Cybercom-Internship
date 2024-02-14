@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.body{
+    min-height: 100vh;   
+}
+
+.main{
+    min-height: 100vh;
+    background: url(../images/bg3.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+}
+
+.container h2{
+   color: #002765;
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   font-size: 40px;
+}
+
+.container img{
+    width: 70px;
+    margin-left: 10px;
+}
+
+
+/* Loginn Page */
+
+h1{
+    font-size:25px;
+    color: black;
+    font-weight: 100;
+    
+  }
+
+.box{
+    background: #fff;
+    width:300px;
+    height: auto;
+    border: rgba(0, 0, 255, 0.817) 3px solid;
+     margin: 0 auto 0 auto;
+    padding:0px 0px 70px 0px;
+    border-radius: 10px;
+ }
+
+ .card{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:400px;
+    height: 300px;
+    text-align: center;
+}
+
+  .error-message {
+    color: red;
+    margin-top: 5px;
+}
+.text{
+    background: white;
+    border: black 1px solid;
+    padding: 8px;
+    width:250px;
+    color: black;
+    margin-top:10px;
+    font-size:1em;
+  }
+  
+  .button{
+    background-color: lightblue;
+    width:200px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: black;
+    border: none;
+    margin-top:20px;
+    margin-bottom:20px;
+    float:left;
+    margin-left:50px;
+    font-weight:600;
+    font-size:15px;
+  }
+  .buttonRegister{
+    background-color: lightblue;
+    width:200px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: black;
+    border: none;
+    margin-top:2px;
+    float:left;
+    margin-left:50px;
+    font-weight:600;
+    font-size:15px;
+  }
+
+  .or{
+    margin-top: 0px;
+    margin-right: 35px;
+    margin-left: 30px;
+    color: rgba(0, 0, 255, 0.817);
+  }
+
+ .button button{
+    background-color: orange;
+    border: none;
+ }
+/* 
+ Registration Page */
+
+ .dropdown{
+    background: white;
+    border: black 1px solid;
+    padding: 8px;
+    width:250px;
+    margin-top:25px;
+    font-size:1em;
+   
+  }
+
+  .Register{
+    background-color: lightblue;
+    width:200px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: black;
+    border: none;
+    margin-top:2px;
+    float:left;
+    margin-top: 20px;
+    margin-left:50px;
+    font-weight:600;
+    font-size:15px;
+  }
+
+ 
+ 
