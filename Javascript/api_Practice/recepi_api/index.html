@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="app-name">Recipe App</span>
+    <input type="text" id="searchInput" placeholder="Search by cuisine..."> 
+    <button id="searchButton">Search</button>
+    <button class="add">Add Recepi</button>
+    <select class="form-select" id="sort">
+        <option selected value="id">Default Sort</option>
+        <option value="cook">By Cook Time</option>
+        <option value="prep">By Prep Time</option>
+      </select> 
+    
+
+  </nav>
+  <div id="recipeContainer" class="recipe-container"></div>
+  <div id="pagination" class="pagination"></div>
+  <div id="spinner" class="spinner"></div>
+  <script src="app.js"></script>
+</body>
+</html>

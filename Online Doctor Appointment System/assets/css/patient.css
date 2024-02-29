@@ -1,21 +1,107 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
+  }
+  
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('../images/bg4.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
 
-
-.body{
-    min-height: 100vh;   
-}
-
-.main{
-    min-height: 100vh;
-    background: url(../images/bg3.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
     display: flex;
-    /* align-items: center; */
-    justify-content: center; 
-}
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 70px;
+    margin-left: 5px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .welcome-section {
+    margin-bottom: 20px;
+  }
+  
+  .user-details{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .upcoming-appointments-section {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  /* .appointment-booking-section{
+    margin-top: ;
+  } */
+  .appointment-booking-section form {
+    margin-bottom: 20px;
+  }
+
+  .card{
+    background: #fff;
+    width:500px;
+    height: auto;
+    border: black 3px solid;
+     margin: 0 auto 0 auto;
+    padding:10px;
+    border-radius: 10px;
+ }
+
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+   
+   

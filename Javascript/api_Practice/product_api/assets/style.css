@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: darkcyan;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-name {
+    color: white;
+    font-weight: bold;
+  }
+ 
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+  }
+  #searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0px;
+    margin-left: 250px;
+    width: 300px; 
+  }
+  
+  #searchButton {
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 150px;
+  }
+
+  .add{
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+
+  }
+
+  .back{
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  
+  #sort{
+    border-radius: 4px;
+    border: 2px solid white;
+    height: 35px;
+    width: auto;
+    font-size: 10px;
+    margin-right: 10px;
+
+  }
+  #searchButton:hover {
+    background-color: cyan;
+  }
+
+  .add:hover {
+    background-color: cyan;
+  }
+  
+  .back:hover {
+    background-color: darkcyan;
+  }
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.info {
+    flex-grow: 1;
+    padding: 30px;
+    margin-right: 10px;
+}
+
+.description {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.edit-delete {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.delete-btn{
+background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background-color: green;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .paginationContainer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+  }
+  .paginationButton {
+     
+      color: #333;
+      margin-right: 10px;
+      cursor: pointer;
+      padding: 5px 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+  }
+  .paginationButton.active {
+      background-color: #007bff;
+      color: #fff;
+  }
+
+
+/* add product css */
+
+
+.box {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #008CBA;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+/* button:hover {
+    background-color: #45a049;
+} */
+
+button[type="submit"]:hover {
+    background-color: #0073e6;
+}
+
+button[type="reset"]:hover {
+    background-color: #e60000;
+}

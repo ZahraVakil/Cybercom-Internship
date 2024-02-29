@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+    background: #5372F0;
+    align-items: center;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.main{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.wrapper{
+    width: 605px;
+    background: #ffff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+}
+
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .content{
+    margin: 35px 0;
+}
+
+.content .qoute-area{
+    display: flex;
+    justify-content: center;
+}
+
+.qoute-area i{
+    font-size: 15px;
+}
+.qoute-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.qoute-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+.qoute-area .qoute{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author{
+    display: flex;
+    justify-content:flex-end;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons{
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+ list-style: none;
+ margin: 0 5px;
+ height: 47px;
+ width: 47px;
+ display: flex;
+ color: #5372F0;
+ align-items: center;
+ cursor: pointer;
+ justify-content: center;
+ border-radius: 50%;
+ border: 2px solid #5372F0;  
+ transition: all 0.3s ease; 
+}
+
+
+.features ul li:hover{
+    color: #fff;
+    background: #5372F0;
+}
+
+.features .btn{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-style: 16px;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #5372F0;
+}
+
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .quote-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .quote-content {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .quote-author {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .delete-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  

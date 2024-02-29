@@ -35,6 +35,18 @@ function loginUser() {
         });
 
         if (foundUser) {
+          
+            var loggedInUser = {
+                userId: foundUser.userId,
+                fullName: foundUser.fullName,
+                userName: foundUser.userName,
+                usertype: foundUser.usertype
+            };
+
+            
+            sessionStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+
+          
             if (foundUser.usertype === 'Doctor') {
                 window.location.href = 'doctor_dashboard.html';
             } else if (foundUser.usertype === 'Patient') {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD on Product API</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav>
+        <span class="app-name">Product App</span>
+        <input type="text" id="searchInput" placeholder="Search by Category..."> 
+        <button id="searchButton">Search</button>
+        <button class="add" onclick="window.location.href='addProduct.html'">Add Products</button>
+        <select class="form-select" id="sort">
+            <option selected value="default">Default Sort</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+          </select> 
+          </nav>
+      
+    <div class="container" id="product-container">
+        <div id="spinner" class="spinner"></div>
+
+    </div>
+    <div class="paginationContainer"></div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

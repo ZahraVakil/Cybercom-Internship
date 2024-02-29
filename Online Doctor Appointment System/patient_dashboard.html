@@ -3,11 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient</title>
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/patient.css">
 </head>
 <body>
-    <div class="main">
-    <nav>Book apo</nav>
-    </div>
+    <header>
+        <div class="logo"> <img src="./assets/images/doctor.png" alt="icon"></div>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#bookAppointment">Book Appointments</a></li>
+                <li><a href="#myAppoitments">My Appointments</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section" id="welcome">
+            <h2>Welcome, [Patient Name]!</h2>
+            <h3>My details:</h3>
+        
+            <div class="user-details">
+             
+            </div>
+        </section>
+       
+        <section class="appointment-booking-section" id="bookAppointment">
+            <h3>Book Appointment</h3>
+            <div class="card">
+            <form>
+                <label for="doctor">Doctor:</label>
+                <select id="doctor" name="doctor">
+                    <option value="">Choose Doctor</option>
+                    <!-- <option value="dr-jones">Dr. Jones</option> -->
+                   
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+                <label for="notes">Disease:</label>
+                <textarea id="notes" name="notes"></textarea>
+                <button type="submit">Book Appointment</button>
+            </form>
+            </div>
+        </section>
+
+        <section class="upcoming-appointments-section" id="myAppoitments">
+            <h3>Upcoming Appointments</h3>
+            <ul>
+                <li>
+                    <span>Date: January 1, 2025</span>
+                    <span>Time: 10:00 AM</span>
+                    <span>Doctor: Dr. Smith</span>
+                    <span>Status: Confirmed</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="./assets/js/patient_dashboard.js"></script>
+ 
 </body>
 </html>
